@@ -3,13 +3,14 @@
 ## Pequena aplicação criada em Flask
 
 ### Descrição
-Pequeno servidor web que gera páginas coloridas do _export_ da variável de ambiente WEB_COLOR, por exemplo:
+Pequeno servidor web que gera páginas coloridas a partir do _export_ da variável de ambiente __WEB_COLOR__, por exemplo:
 ```export WEB_COLOR=blue```
 
-Após _setar_ esta variável de ambiente é possível iniciar o flask ```flask run``` visualizando no seu _browser_ a partir da url: __localhost:5000__ a página colorida gerada.
+Após _setar_ esta variável de ambiente é possível iniciar o flask ```flask run``` visualizando em qualquer _browser_ a página de fundo colorido escolhido:
+_http://localhost:5000_
 
 ### Instruções
-Você precisa ter o _venv_ instalado ou qualquer virtualizador de ambiente python, no caso do _venv_, _workdir_ no diretório da aplicação:
+Você precisa ter o _venv_ instalado ou qualquer virtualizador de ambiente python, caso seja o _venv_, de "dentro" do diretório da aplicação:
 ```python -m venv venv``` para criar o ambiente virtual
 ```venv/bin/pip install -r requirements.txt``` para instalar as dependências
 ```source venv/bin/activate``` para ativar o ambiente virtual
