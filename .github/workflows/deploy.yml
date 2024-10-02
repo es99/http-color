@@ -39,7 +39,7 @@ jobs:
             - name: Build and push
               uses: docker/build-push-action@v4
               with:
-                context: ./http-color
-                file: ./http-color/Dockerfile
+                context: ./
+                file: ./Dockerfile
                 push: true
                 tags: ${{ steps.meta.outputs.tags }}
