@@ -1,0 +1,17 @@
+name: webcolor
+services:
+  http:
+    image: http-color:1.0
+    environment:
+     - WEB_COLOR=orange
+    ports:
+      - 5000:5000
+    networks:
+      - http-network
+    volumes:
+      - type: bind
+        source: ./templates
+        target: /home/flasky/templates
+
+networks:
+  http-network:

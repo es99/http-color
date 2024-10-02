@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ color }} Background Page</title>
+    <title>Page - {{ color }}</title>
     <style>
         body {
             background-color: {{ color }};
@@ -11,7 +11,12 @@
     </style>
 </head>
 <body>
-    <h1>Welcome the Flask App Docker - {{ color }}</h1>
-    <p>Vamos agora colocar esta aplicacao em container</p>
+    <h1>Actual Color: {{ color }}</h1>
+    <p>Welcome to Flask-APP HTTP-Color</p>
+    <p>
+        Através de uma variável de ambiente é possível setar a cor de fundo da página
+        a ser exibida!
+    </p>
+    <p>Author: Engels Souza engels.franca@gmail.com</p>
 </body>
 </html>
