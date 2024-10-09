@@ -1,0 +1,23 @@
+name: webcolor
+services:
+  http:
+    image: http-color
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+     - WEB_COLOR=orange
+    ports:
+      - 5000:5000
+    networks:
+      - http-network
+    volumes:
+      - type: bind
+        source: ./templates
+        target: /home/flasky/templates
+    labels:
+       shipyard.primary-route: true
+       shipyard.route: "/"
+
+networks:
+  http-network:
